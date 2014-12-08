@@ -1,0 +1,30 @@
+// irreducible loops
+
+void strength_test4(int *data) {
+  int i;
+  if (data[1]) {
+    i = 2;
+    goto here;
+  }
+  i = 0;
+  do {
+    i = i + 1;
+  here:
+    data[data[2]] = 2;
+  } while (21*i < data[3]);
+}
+
+void strength_result4(int *data) {
+  int i;
+  if (data[1]) {
+    i = 42;
+    goto here;
+  }
+  i = 0;
+  do {
+    i = i + 21;
+  here:
+    data[data[2]] = 2;
+  } while (i < data[3]);
+}
+
