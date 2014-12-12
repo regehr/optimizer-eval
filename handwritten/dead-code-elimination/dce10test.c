@@ -12,8 +12,3 @@ void dead_test10(int *data) {
   j = data[2];
   data[j] = 2;
 }
-
-void dead_result10(int *data) {
-  int j = data[2];
-  data[j] = 2;
-}

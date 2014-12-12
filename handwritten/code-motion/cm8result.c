@@ -8,7 +8,7 @@ void motion_result8(int *data) {
   if (i < data[2]) {
     j = j*21;
     do {
-      data[i] = 21*j + i;
+      data[i] = j + i;
       i++;
     } while (i < data[2]);
   }

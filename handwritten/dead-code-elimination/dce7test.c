@@ -9,9 +9,3 @@ void dead_test7(int *data) {
   else
     k--;
 }
-
-void dead_result7(int *data) {
-  int j = data[2];
-  data[j] = 2;
-}
-

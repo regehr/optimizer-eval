@@ -12,7 +12,7 @@ void motion_result1(int *data) {
     i = 5;
     j = data[0] + data[3];
   }
-  data[3] = i;
-  data[4] = j;
+  data[3] = j;
+  data[4] = i;
 }
 
