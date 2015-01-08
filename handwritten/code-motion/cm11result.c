@@ -11,7 +11,7 @@ void motion_result11(int *data) {
   }
   else {
     do {
-      i = i + 2;
+      i = i + data[4];
       data[data[2]] = 2;
     } while (i < data[3]);
   }

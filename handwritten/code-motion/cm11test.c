@@ -7,7 +7,7 @@ void motion_test11(int *data) {
     if (p)
       i = i + 1;
     else
-      i = i + 2;
+      i = i + data[4];
     data[data[2]] = 2;
   } while (i < data[3]);
 }
